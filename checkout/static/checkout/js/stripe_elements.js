@@ -46,7 +46,6 @@ card.addEventListener('change', function (event) {
 
 // Handle form submit
 var form = document.getElementById('payment-form');
-console.log(form);
 
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
@@ -55,7 +54,6 @@ form.addEventListener('submit', function(ev) {
     $('#payment-form').fadeToggle(100);
     $('#loading-overlay').fadeToggle(100);
 
-    console.log('Test1');
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     
     
